@@ -101,15 +101,15 @@ variable "nsg_rules" {
   }
 }
 
-# # azurerm_recovery_services_vault
-# variable "recovery_services_vault_name" {
-#   type        = string
-#   description = "name of the recover service vault"
-# }
-# variable "services_vault_resource_group_name" {
-#   type        = string
-#   description = "name of resource group where the recovery service vault reside in"
-# }
+# azurerm_recovery_services_vault
+variable "recovery_services_vault_name" {
+  type        = string
+  description = "name of the recover service vault"
+}
+variable "services_vault_resource_group_name" {
+  type        = string
+  description = "name of resource group where the recovery service vault reside in"
+}
 variable "keyvault_name" {
   type        = string
   description = "name of keyvault where VM password will be stored in"
